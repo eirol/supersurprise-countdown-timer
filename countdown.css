@@ -14,7 +14,7 @@ body {
   align-items: center;
   background-image: url("marks.png");
   background-repeat: repeat;
-  background-position: 10% 10%;
+  background-position: 182% 7%; /* No idea what this means */
   background-blend-mode: hard-light;
   background-color: #393939;
   display: flex;
@@ -84,6 +84,26 @@ li .remaining {
 
   li .remaining {
     font-size: 3.375rem;
+  }
+}
+
+@media all and (max-width: 430px) {
+  h1 {
+    font-size: 2.0rem;
+  }
+
+  li {
+    font-size: 1.000rem;
+    padding: 0.45rem;
+  }
+
+  li .remaining {
+    font-size: 3.375rem;
+  }
+
+  #countdown {
+    margin-top: 3vh;
+    margin-bottom: 4vh;
   }
 }
 
