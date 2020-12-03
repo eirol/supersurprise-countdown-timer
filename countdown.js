@@ -33,41 +33,53 @@
 
   let offset = 0;
 
-  let x = setInterval(function() {
-        let now = new Date().getTime();
-        let distance = countDown - now;
+  let t0 = new Date().getTime();
 
-        offset += 100000;
-        distance -= offset;
+  function update() {
+    let now = new Date().getTime();
+    let distance = countDown - now;
 
-        if (distance < 0) distance = 0;
+    let elapsed = now - t0;
+    let a = 10 * elapsed/second;
+    let x = -a;
+    let y = -0.5 * a;
+    //document.body.style.backgroundPosition = x + "% " + y + "%";
 
-        let daysLeft = Math.floor(distance / (day));
-        let hoursLeft = Math.floor((distance % (day)) / (hour));
-        let minutesLeft = Math.floor((distance % (hour)) / (minute));
-        let secondsLeft = Math.floor((distance % (minute)) / second);
+    // For testing purposes
+    //offset += 100000;
+    //distance -= offset;
 
-        document.getElementById("days").innerText = daysLeft;
-        document.getElementById("hours").innerText = hoursLeft;
-        document.getElementById("minutes").innerText = minutesLeft;
-        document.getElementById("seconds").innerText = secondsLeft;
+    if (distance < 0) distance = 0;
 
-        pluralize(document.getElementById("daylabel"), daysLeft, "Día", "Días");
-        pluralize(document.getElementById("hourlabel"), hoursLeft, "Hora", "Horas");
-        pluralize(document.getElementById("minutelabel"), minutesLeft, "Minuto", "Minutos");
-        pluralize(document.getElementById("secondlabel"), secondsLeft, "Segundo", "Segundos");
+    let daysLeft = Math.floor(distance / (day));
+    let hoursLeft = Math.floor((distance % (day)) / (hour));
+    let minutesLeft = Math.floor((distance % (hour)) / (minute));
+    let secondsLeft = Math.floor((distance % (minute)) / second);
 
-        //do something later when date is reached
-        /* Nah
-        if (distance < 0) {
-          let countdown = document.getElementById("countdown");
-          let content = document.getElementById("content");
+    document.getElementById("days").innerText = daysLeft;
+    document.getElementById("hours").innerText = hoursLeft;
+    document.getElementById("minutes").innerText = minutesLeft;
+    document.getElementById("seconds").innerText = secondsLeft;
 
-          countdown.style.display = "none";
-          content.style.display = "block";
+    pluralize(document.getElementById("daylabel"), daysLeft, "Día", "Días");
+    pluralize(document.getElementById("hourlabel"), hoursLeft, "Hora", "Horas");
+    pluralize(document.getElementById("minutelabel"), minutesLeft, "Minuto", "Minutos");
+    pluralize(document.getElementById("secondlabel"), secondsLeft, "Segundo", "Segundos");
 
-          clearInterval(x);
-        }
-        */
-      }, 0)
-  }());
+    //do something later when date is reached
+    /* Nah
+      if (distance < 0) {
+        let countdown = document.getElementById("countdown");
+        let content = document.getElementById("content");
+
+        countdown.style.display = "none";
+        content.style.display = "block";
+
+        clearInterval(x);
+      }
+      */
+  }
+
+  setInterval(update);
+
+}());

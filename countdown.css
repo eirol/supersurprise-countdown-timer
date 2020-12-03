@@ -12,8 +12,11 @@ html, body {
 
 body {
   align-items: center;
-  //background-color: #ffd54f;
-  background-color: #0f0d08;
+  background-image: url("marks.png");
+  background-repeat: repeat;
+  background-position: 10% 10%;
+  background-blend-mode: hard-light;
+  background-color: #171717;
   display: flex;
   font-family: sans-serif;
   /*
@@ -30,7 +33,6 @@ body {
 }
 
 .container {
-  //color: #333;
   color: #ddd;
   margin: 0 auto;
   text-align: center;
