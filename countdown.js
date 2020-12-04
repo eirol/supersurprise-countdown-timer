@@ -50,8 +50,8 @@
     //document.body.style.backgroundPosition = x + "% " + y + "%";
 
     // For testing purposes
-    offset += 1000000;
-    distance -= offset;
+    //offset += 1000000;
+    //distance -= offset;
 
     if (distance < 0) distance = 0;
 
@@ -65,10 +65,11 @@
     document.getElementById("minutes").innerText = minutesLeft;
     document.getElementById("seconds").innerText = secondsLeft;
 
+    // For testing purposes
     //daysLeft = (daysLeft % 2) ? 0 : 1;
-    hoursLeft = (hoursLeft % 2) ? 0 : 1;
-    minutesLeft = (minutesLeft % 2) ? 0 : 1;
-    secondsLeft = (secondsLeft % 2) ? 0 : 1;
+    //hoursLeft = (hoursLeft % 2) ? 0 : 1;
+    //minutesLeft = (minutesLeft % 2) ? 0 : 1;
+    //secondsLeft = (secondsLeft % 2) ? 0 : 1;
 
     pluralize(document.getElementById("daylabel"), daysLeft, "Día", "Días");
     pluralize(document.getElementById("hourlabel"), hoursLeft, "Hora", "Horas");
