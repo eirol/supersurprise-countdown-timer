@@ -58,8 +58,8 @@ The music is the same as _Under the Sea_. The lyrics are:
 ### Q: Can I use the theme song in my game? It's about a rock with powers that has to save the world because it's gonna be destroyed by an evil frog and there are many levels with many monsters and you can buy weapons and armor and there are many weapons and the levels are harder and harder but you get experience points when you destroy monsters and you can use the experience points to pick new powers and it's awesome.
 Sure.
 
-### Q: Where can I buy supersurprise merchandaising?
-Currently, there is no supersurprise merchandaising, but we intend to sell shirts and mugs if we see there is demand for it.
+### Q: Where can I buy supersurprise merchandising?
+Currently, there is no supersurprise merchandising, but we intend to sell shirts and mugs if we see there is demand for it.
 
 ### Q: Super?
 Super.
