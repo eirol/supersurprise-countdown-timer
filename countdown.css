@@ -72,6 +72,22 @@ li .remaining {
   margin-bottom: 7vh;
 }
 
+#lidays {
+  min-width: 6.8rem;
+}
+
+#lihours {
+  min-width: 9.5rem;
+}
+
+#liminutes {
+  min-width: 10rem;
+}
+
+#liseconds {
+  min-width: 12rem;
+}
+
 @media all and (max-width: 768px) {
   h1 {
     font-size: 1.5rem;
@@ -85,6 +101,22 @@ li .remaining {
   li .remaining {
     font-size: 3.375rem;
   }
+
+  #lidays {
+    min-width: 5.1rem;
+  }
+
+  #lihours {
+    min-width: 6.375rem;
+  }
+
+  #liminutes {
+    min-width: 7.5rem;
+  }
+
+  #liseconds {
+    min-width: 9rem;
+  }
 }
 
 @media all and (max-width: 430px) {
@@ -93,7 +125,7 @@ li .remaining {
   }
 
   li {
-    font-size: 1.000rem;
+    font-size: 0.900rem;
     padding: 0.45rem;
   }
 
@@ -104,6 +136,60 @@ li .remaining {
   #countdown {
     margin-top: 3vh;
     margin-bottom: 4vh;
+  }
+
+  #lidays {
+    min-width: 3.6rem;
+  }
+
+  #lihours {
+    min-width: 4.67rem;
+  }
+
+  #liminutes {
+    min-width: 5.67rem;
+  }
+
+  #liseconds {
+    min-width: 6.1rem;
+  }
+}
+
+@media all and (max-width: 330px) {
+  /* For the iPhone 5/SE */
+
+  h1 {
+    font-size: 2.0rem;
+  }
+
+  li {
+    font-size: 0.900rem;
+    padding: 0.45rem;
+  }
+
+  li .remaining {
+    font-size: 3.375rem;
+  }
+
+  #countdown {
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+  }
+
+  #lidays {
+    min-width: 0.6rem;
+  }
+
+  #lihours {
+    min-width: 4.67rem;
+  }
+
+  #liminutes {
+    min-width: 5.27rem;
+  }
+
+  #liseconds {
+    min-width: 6.1rem;
   }
 }
 
@@ -126,12 +212,4 @@ li .remaining {
   -webkit-text-fill-color: transparent;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-}
-
-#test {
-    position: absolute;
-    visibility: hidden;
-    height: auto;
-    width: auto;
-    white-space: nowrap;
 }
