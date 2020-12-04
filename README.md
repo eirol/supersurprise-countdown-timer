@@ -29,7 +29,7 @@ To preserve the integrity of the surprise, we cannot confirm nor deny its potato
 Yes, it could be a potato.
 
 ### Q: Can I get a refund if I don't like the supersurprise?
-You haven't payed anything. So, no. Besides, you will _love_ the supersurprise.
+You haven't paid anything. So, no. Besides, you will _love_ the supersurprise.
 
 ### Q: Does it have a theme song?
 Yes.
