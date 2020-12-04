@@ -32,8 +32,8 @@
   const hour = minute * 60;
   const day = hour * 24;
 
-  let birthday = "Dec 7, 2020 13:00:00";
-  let countDown = new Date(birthday).getTime();
+  let target = "Dec 7, 2020 11:00:00";
+  let countDown = new Date(target).getTime();
 
   let offset = 0;
 
