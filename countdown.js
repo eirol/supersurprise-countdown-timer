@@ -75,22 +75,9 @@
     pluralize(document.getElementById("hourlabel"), hoursLeft, "Hora", "Horas");
     pluralize(document.getElementById("minutelabel"), minutesLeft, "Minuto", "Minutos");
     pluralize(document.getElementById("secondlabel"), secondsLeft, "Segundo", "Segundos");
-
-    //do something later when date is reached
-    /* Nah
-      if (distance < 0) {
-        let countdown = document.getElementById("countdown");
-        let content = document.getElementById("content");
-
-        countdown.style.display = "none";
-        content.style.display = "block";
-
-        clearInterval(x);
-      }
-      */
   }
 
   document.addEventListener("DOMContentLoaded", update);
-  setInterval(update, 200);
+  setInterval(update, 30);
 
 }());
